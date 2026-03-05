@@ -10,7 +10,7 @@
   class: "",
   other: (),
   main-color: "4DA6FF",
-  logo: image("logo.png"),
+  logo: none
 )
 
 #set page(header: align(right + horizon, "Informe técnico"))
@@ -18,7 +18,6 @@
 #show table.cell.where(y: 0): strong
 
 // Configuración de bibliografía
-#set bibliography(style: "ieee")
 
 = Objetivos y alcance
 
@@ -83,16 +82,7 @@ La Resolución 1407 de 2022 @res1407 clasifica la mermelada en la
 Este criterio complementa la NTC 285 y es de obligatorio cumplimiento para
 efectos de vigilancia sanitaria (INVIMA).
 
-== NTC 285 — Tabla 2: Requisitos fisicoquímicos
 
-#table(
-  columns: (2fr, 1fr, 1fr),
-  align: left,
-  [*Parámetro*], [*Mínimo*], [*Máximo*],
-  [Sólidos solubles (°Brix)], [60], [—],
-  [pH a 20 °C], [—], [3,4],
-  [Acidez (% ác. cítrico)], [0,5], [—],
-)
 
 == Otras normas de referencia
 
@@ -108,7 +98,7 @@ efectos de vigilancia sanitaria (INVIMA).
 
 == Muestra
 Se analizó una muestra de mermelada de maracuyá elaborada por Profuhor,
-recibida el día _[completar fecha]_ en condiciones de almacenamiento a
+recibida el día #highlight[_[completar fecha]_] en condiciones de almacenamiento a
 temperatura ambiente. La muestra fue transportada al laboratorio de
 Microbiología de Alimentos de la Universidad de Cartagena, donde se mantuvo en
 condiciones controladas hasta su procesamiento.
@@ -125,11 +115,10 @@ Cada dilución fue inoculada por duplicado.
   columns: (1.8fr, 2fr, 0.8fr, 0.8fr, 1.5fr),
   align: left,
   [*Determinación*], [*Medio de cultivo*], [*T (°C)*], [*Tiempo*], [*Método*],
-  [Aerobios mesófilos], [Agar Plate Count (PCA)], [35 ± 1], [48 h], [NTC 4519 @ntc4519],
   [Mohos y levaduras], [Agar Sabouraud Dextrosa], [25 ± 1], [5–7 d], [NTC 4132 @ntc4132],
-  [Coliformes / _E. coli_], [Agar EMB / Agar VRBA], [35 ± 1], [24–48 h], [NTC 4458 @ntc4458],
-  [_Salmonella_ spp.], [Caldo Rappaport / Agar XLD], [37 ± 1], [24 h], [NTC 4574 @ntc4574],
-  [_Clostridium_ sulf. red.], [Agar SPS / TSN], [37 ± 1], [48 h], [NTC 4834 @ntc4834],
+  [Coliformes / _E. coli_], [Agar EMB], [35 ± 1], [24–48 h], [NTC 4458 @ntc4458],
+  [_Salmonella_ spp.], [Caldo Rappaport / Agar Salmonella], [37 ± 1], [24 h], [NTC 4574 @ntc4574],
+  [_Clostridium_ sulf. red.], [TSN], [37 ± 1], [48 h], [NTC 4834 @ntc4834],
 )
 
 = Resultados
@@ -146,19 +135,57 @@ A continuación se presentan los resultados de cada ensayo microbiológico.
   [_E. coli_], [_por completar_], [< 3], [—], [—],
   [_Clostridium_ sulf. red.], [_por completar_], [_por definir_], [_por definir_], [—],
   [_Salmonella_ spp. /25 g], [_por completar_], [Ausencia], [—], [—],
-)
+) <tabla_r>
 
 // Espacio para figuras de placas
-// #figure(
-//   grid(
-//     columns: 2,
-//     gutter: 1em,
-//     image("docs/imagenes/placa_XX.jpg", width: 100%),
-//     image("docs/imagenes/placa_YY.jpg", width: 100%),
-//   ),
-//   caption: [Descripción de las placas.],
-// )
+#figure(
+  grid(
+    columns: 2,
+    gutter: 1em,
+    image("docs/imagenes/mermelada_maracucya_EMB_1.jpg", width: 100%),
+    image("docs/imagenes/mermelada_maracucya_EMB_2.jpg", width: 100%),
+  ),
+  caption: [Platos de cultivo EMB (Coliformes/_E.coli_)],
+)<figura_1>
 
+
+#figure(
+  grid(
+    columns: 2,
+    gutter: 1em,
+    image("docs/imagenes/mermelada_maracucya_manitol_1.jpg", width: 100%),
+    image("docs/imagenes/mermelada_maracucya_manitol_2.jpg", width: 100%),
+  ),
+  caption: [Platos de cultivo Manitol Salado (_S.aureus_)],
+)<figura_2>
+
+#figure(
+  grid(
+    columns: 2,
+    gutter: 1em,
+    image("docs/imagenes/mermelada_maracucya_salmonella_1.jpg"),
+    image("docs/imagenes/mermelada_maracucya_salmonella_2.jpg"),
+  ),
+  caption: [Platos de cultivo _Salmonella spp_ (_Salmonella spp_)]
+)<figura_3>
+
+#figure(
+  grid(
+    columns: 2,
+    gutter: 1em,
+    image("docs/imagenes/mermelada_maracuya_sabouraud_1.jpg"),
+    image("docs/imagenes/mermelada_maracuya_sabouraud_2.jpg")
+  ),
+  caption: [Plato de cultivo Sabouraud Destroxa (Hongos y Levaduras)]
+)<figura_4>
+
+#figure(
+  grid(
+    columns: 1,
+    gutter: 1em,
+    image("docs/imagenes/mermelada_maracucya_mackonckey.jpg")
+  ), caption: [Plato de cultivo McConkey (Enteropatógenos)]
+)<figura_5>
 = Análisis de resultados
 
 // Completar con la interpretación de los hallazgos frente a la NTC 285
@@ -172,7 +199,11 @@ A continuación se presentan los resultados de cada ensayo microbiológico.
 // - Análisis del significado sanitario de cada hallazgo.
 // - Relación con las condiciones del proceso productivo.
 
-_[Sección pendiente de completar con los resultados del laboratorio.]_
+Los valores obtenidos en la tabla de resultados fueron sometidos a análisis y comparación cruzada con los valores de mínimos de acpetación según las normas @res1407, @ntc285. Como se puede envidenciar en las fotografías de los medios de cultivo una vez terminado el tiempo de incubación, no aparecen colonias visibles tanto en EMB, Salmonella, Manitol Salado y MacConkey. Esto es un indicio de buenas prácticas de manofactura @cxs79 y se puede afirmar que la mayoría de posibles riesgos biológicos han sido controlados. 
+
+A diferencia de lo anterior, la  @figura_4 muestra un resultado ambiguo con respecto al crecimiento de un hongo esporulado en la imagen izquierda. De acuerdo a la norma de aceptación @ntc4519 se descarta posible contaminación por hongos o levaduras al no ser un resultado consistente.
+
+La ausencia de crecimiento en los Agares dedicados a enteropatógenos y coliformes @figura_1, @figura_5. Indica que por inferencia es necesario descartar la presencia de _Clostridium_ dentro de la muestra.
 
 = Conclusiones y recomendaciones
 
@@ -180,6 +211,11 @@ _[Sección pendiente de completar con los resultados del laboratorio.]_
 // - Dictamen final de conformidad o no conformidad frente a la NTC 285 @ntc285.
 // - Recomendaciones específicas para Profuhor según los hallazgos.
 
-_[Sección pendiente de completar con los resultados del laboratorio.]_
+
+La incertidumbre generada por el crecimiento de esporas dentro del agar Sabouraud puede ser mitigada facilmente al restringir el espacio de aire presente en la parte superior del empaque. Aun es necesario cotejar los resultados con los ensayos fisico químicos.
+
+De acuerdo con los lineamientos expedidos por la norma, el recuento de bacterias se hace innecesario dado a las condiciones de inocuidad y acepcia del producto, dando un resultado final de conformidad con el lote producido. @ntc285
+
+
 
 #bibliography("docs/referencias.bib")
