@@ -202,11 +202,11 @@ A continuación se presentan los resultados de cada ensayo microbiológico.
 // - Análisis del significado sanitario de cada hallazgo.
 // - Relación con las condiciones del proceso productivo.
 
-Los valores obtenidos en la tabla de resultados se encuentran dentro de los parámtetros de aceptación exigidos por la NTC 285 y la resolución 1407/2022. La ausencia de colonias en los agares selectivos para _Coliformes_, _Salmonella_ [@figura_1, @figura_2, @figura_3], enteropatógenos y _S. aureus_ evidencia la aplicación de buenas prácticas de manufactura y una correcta pasteurización o tratamiento térmico durante el proceso. 
+Los valores obtenidos en la tabla de resultados se encuentran dentro de los parámetros de aceptación exigidos por la NTC 285 y la resolución 1407/2022. La ausencia de colonias en los agares selectivos para _Coliformes_, _Salmonella_ [@figura_1, @figura_2, @figura_3], enteropatógenos y _S. aureus_ evidencia la aplicación de buenas prácticas de manufactura y una correcta pasteurización o tratamiento térmico durante el proceso. 
 
-En cuento a la prueba de Mohos y Levaduras presente en el producto [@figura_4], se observó el crecimiento restringido de una (1) única unidad formadora de colonias, lo cual indica un recuento inferior al límite de riesgo (_m_ = 30 UFC/ _M_ = 300). Descartando alteraciones activas graces, aunque se recomienda vigilar el sellado y el volumen de espacio de la cabeza de envase para evitar la proliferación de microorganismos aeróbeos.
+en cuanto a la prueba de Mohos y Levaduras presente en el producto [@figura_4], se observó el crecimiento restringido de una (1) única unidad formadora de colonias, lo cual indica un recuento inferior al límite de riesgo (_m_ = 30 UFC/ _M_ = 300). Descartando alteraciones activas gracias, aunque se recomienda vigilar el sellado y el volumen de espacio de la cabeza de envase para evitar la proliferación de microorganismos aerobios.
 
-Uno de los ensayos programados por la norma técnica es la cantificación de _Clostridium_ en medio TSY-Dextrosa. Dicha prueba no se ha realizado en concondancia con los resultados obtenidos en los ensayos fisico-químicos que presentan un pH cercano al valor seguro (< 3.4), lo suficiente para inhibir la germinación de esporas. 
+Uno de los ensayos programados por la norma técnica es la cuantificación de _Clostridium_ en medio TSY-Dextrosa. Dicha prueba no se ha realizado en concordancia con los resultados obtenidos en los ensayos fisico-químicos que presentan un pH cercano al valor seguro (< 3.4), lo suficiente para inhibir la germinación de esporas. 
 
 
 
