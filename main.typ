@@ -55,12 +55,13 @@ Los ensayos microbiológicos requeridos por la NTC 285 (Sección 5.3, Tabla 3)
   columns: (2fr, 1fr, 0.5fr, 0.5fr, 1fr, 1fr),
   align: left,
   [*Determinación*], [*Método*], [*n*], [*c*], [*m*], [*M*],
-  [Aerobios mesófilos], [NTC 4519 @ntc4519], [3], [1], [_por definir_], [_por definir_],
-  [Mohos y levaduras], [NTC 4132 @ntc4132], [3], [1], [_por definir_], [_por definir_],
-  [Coliformes totales], [NTC 4458 @ntc4458], [3], [1], [_por definir_], [_por definir_],
-  [_Escherichia coli_], [NTC 4458 @ntc4458], [3], [1], [< 3], [---],
-  [_Clostridium_ sulf. red.], [NTC 4834 @ntc4834], [3], [1], [_por definir_], [_por definir_],
-  [_Salmonella_ spp. /25 g], [NTC 4574 @ntc4574], [3], [0], [Ausencia], [---],
+  [Aerobios mesófilos], [NTC 4519], [3], [1], [10], [100],
+  [Mohos y levaduras], [NTC 4132], [3], [1], [30], [300],
+  [Coliformes totales], [NTC 4458], [3], [1], [< 10], [---],
+  [_Escherichia coli_], [NTC 4458], [3], [1], [Ausencia], [---],
+  [_Clostridium_ sulf. red.], [NTC 4834], [3], [1], [< 10], [10],
+  [_Salmonella_ spp. /25 g], [NTC 4574], [3], [0], [Ausencia], [---],
+
 )
 
 *Nota:* Los valores exactos de _m_ y _M_ para cada determinación deben
@@ -98,7 +99,7 @@ efectos de vigilancia sanitaria (INVIMA).
 
 == Muestra
 Se analizó una muestra de mermelada de maracuyá elaborada por Profuhor,
-recibida el día #highlight[_[completar fecha]_] en condiciones de almacenamiento a
+recibida el día #datetime(day: 13, month: 2, year: 2026).display() en condiciones de almacenamiento a
 temperatura ambiente. La muestra fue transportada al laboratorio de
 Microbiología de Alimentos de la Universidad de Cartagena, donde se mantuvo en
 condiciones controladas hasta su procesamiento.
@@ -129,13 +130,15 @@ A continuación se presentan los resultados de cada ensayo microbiológico.
   columns: (1.8fr, 1.5fr, 1fr, 1fr, 1.2fr),
   align: left,
   [*Determinación*], [*Resultado*], [*m (NTC 285)*], [*M (NTC 285)*], [*Concepto*],
-  [Aerobios mesófilos], [_por completar_], [_por definir_], [_por definir_], [—],
-  [Mohos y levaduras], [_por completar_], [_por definir_], [_por definir_], [—],
-  [Coliformes totales], [_por completar_], [_por definir_], [_por definir_], [—],
-  [_E. coli_], [_por completar_], [< 3], [—], [—],
-  [_Clostridium_ sulf. red.], [_por completar_], [_por definir_], [_por definir_], [—],
-  [_Salmonella_ spp. /25 g], [_por completar_], [Ausencia], [—], [—],
-) <tabla_r>
+  [Aerobios mesófilos], [No realizado], [10], [100], [—],
+  [Mohos y levaduras], [10 UFC/g], [30], [300], [Aceptable],
+  [Coliformes totales], [< 10 UFC/g], [< 10], [—], [Aceptable],
+  [_E. coli_], [Ausencia], [Ausencia], [—], [Aceptable],
+  [_Staphylococcus aureus_], [< 10 UFC/g], [—], [—], [Aceptable],
+  [_Clostridium_ sulf. red.], [No realizado], [< 10], [10], [—],
+  [_Salmonella_ spp. /25 g], [Ausencia], [Ausencia], [—], [Aceptable],
+) 
+
 
 // Espacio para figuras de placas
 #figure(
@@ -199,11 +202,13 @@ A continuación se presentan los resultados de cada ensayo microbiológico.
 // - Análisis del significado sanitario de cada hallazgo.
 // - Relación con las condiciones del proceso productivo.
 
-Los valores obtenidos en la tabla de resultados fueron sometidos a análisis y comparación cruzada con los valores de mínimos de acpetación según las normas @res1407, @ntc285. Como se puede envidenciar en las fotografías de los medios de cultivo una vez terminado el tiempo de incubación, no aparecen colonias visibles tanto en EMB, Salmonella, Manitol Salado y MacConkey. Esto es un indicio de buenas prácticas de manofactura @cxs79 y se puede afirmar que la mayoría de posibles riesgos biológicos han sido controlados. 
+Los valores obtenidos en la tabla de resultados se encuentran dentro de los parámtetros de aceptación exigidos por la NTC 285 y la resolución 1407/2022. La ausencia de colonias en los agares selectivos para _Coliformes_, _Salmonella_ [@figura_1, @figura_2, @figura_3], enteropatógenos y _S. aureus_ evidencia la aplicación de buenas prácticas de manufactura y una correcta pasteurización o tratamiento térmico durante el proceso. 
 
-A diferencia de lo anterior, la  @figura_4 muestra un resultado ambiguo con respecto al crecimiento de un hongo esporulado en la imagen izquierda. De acuerdo a la norma de aceptación @ntc4519 se descarta posible contaminación por hongos o levaduras al no ser un resultado consistente.
+En cuento a la prueba de Mohos y Levaduras presente en el producto [@figura_4], se observó el crecimiento restringido de una (1) única unidad formadora de colonias, lo cual indica un recuento inferior al límite de riesgo (_m_ = 30 UFC/ _M_ = 300). Descartando alteraciones activas graces, aunque se recomienda vigilar el sellado y el volumen de espacio de la cabeza de envase para evitar la proliferación de microorganismos aeróbeos.
 
-La ausencia de crecimiento en los Agares dedicados a enteropatógenos y coliformes @figura_1, @figura_5. Indica que por inferencia es necesario descartar la presencia de _Clostridium_ dentro de la muestra.
+Uno de los ensayos programados por la norma técnica es la cantificación de _Clostridium_ en medio TSY-Dextrosa. Dicha prueba no se ha realizado en concondancia con los resultados obtenidos en los ensayos fisico-químicos que presentan un pH cercano al valor seguro (< 3.4), lo suficiente para inhibir la germinación de esporas. 
+
+
 
 = Conclusiones y recomendaciones
 
@@ -211,10 +216,7 @@ La ausencia de crecimiento en los Agares dedicados a enteropatógenos y coliform
 // - Dictamen final de conformidad o no conformidad frente a la NTC 285 @ntc285.
 // - Recomendaciones específicas para Profuhor según los hallazgos.
 
-
-La incertidumbre generada por el crecimiento de esporas dentro del agar Sabouraud puede ser mitigada facilmente al restringir el espacio de aire presente en la parte superior del empaque. Aun es necesario cotejar los resultados con los ensayos fisico químicos.
-
-De acuerdo con los lineamientos expedidos por la norma, el recuento de bacterias se hace innecesario dado a las condiciones de inocuidad y acepcia del producto, dando un resultado final de conformidad con el lote producido. @ntc285
+De acuerdo con los resultados obtenidos, el producto cumple con todos los parámetros de calidad evaluados. En conformidad con la norma técnica @ntc285, concluye que el producto es aprobado en términos de seguridad microbiológica.
 
 
 
